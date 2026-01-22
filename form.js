@@ -342,7 +342,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Build payload for sendOTP (includes all form fields)
       const sendPayload = {
         page_url: window.location.href,
-        project_name: "Sobha",
+        project_name: "Max Sector 105",
         name,
         mobile: phone,
         city,

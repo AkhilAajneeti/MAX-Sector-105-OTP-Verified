@@ -3,6 +3,25 @@
 
 
 <head>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '876752271817035');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=876752271817035&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -13,7 +32,8 @@
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com/"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- Google Fonts: Premium Selection -->
@@ -330,7 +350,7 @@
                         <div class="flex">
                             <span
                                 class="inline-flex items-center px-3 border border-r-0 border-gray-200 bg-gray-100 text-gray-500 text-sm rounded-l">+91</span>
-                            <input type="tel" name="phone" placeholder="Phone Number" required
+                            <input type="tel" name="phone" placeholder="Phone Number" required pattern="^\d{10}$" inputmode="numeric" maxlength="10"
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-r focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition">
                         </div>
                     </div>
@@ -859,12 +879,18 @@
 
                         <!-- OTP boxes (UI only) -->
                         <div class="flex justify-center gap-3">
-                            <input type="text" maxlength="1"  inputmode="numeric"  pattern="[0-9]*" class="otp-input text-center border rounded w-12 h-12" />
-                            <input type="text" maxlength="1"  inputmode="numeric"  pattern="[0-9]*"  class="otp-input text-center border rounded w-12 h-12" />
-                            <input type="text" maxlength="1"  inputmode="numeric"  pattern="[0-9]*" class="otp-input text-center border rounded w-12 h-12" />
-                            <input type="text" maxlength="1"  inputmode="numeric"  pattern="[0-9]*" class="otp-input text-center border rounded w-12 h-12" />
-                            <input type="text" maxlength="1"  inputmode="numeric"  pattern="[0-9]*" class="otp-input text-center border rounded w-12 h-12" />
-                            <input type="text" maxlength="1"  inputmode="numeric"  pattern="[0-9]*" class="otp-input text-center border rounded w-12 h-12" />
+                            <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*"
+                                class="otp-input text-center border rounded w-12 h-12" />
+                            <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*"
+                                class="otp-input text-center border rounded w-12 h-12" />
+                            <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*"
+                                class="otp-input text-center border rounded w-12 h-12" />
+                            <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*"
+                                class="otp-input text-center border rounded w-12 h-12" />
+                            <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*"
+                                class="otp-input text-center border rounded w-12 h-12" />
+                            <input type="text" maxlength="1" inputmode="numeric" pattern="[0-9]*"
+                                class="otp-input text-center border rounded w-12 h-12" />
                         </div>
 
                         <!-- Resend -->
@@ -924,7 +950,7 @@
                         <div class="flex">
                             <span
                                 class="inline-flex items-center px-3 border border-r-0 border-gray-200 bg-gray-100 text-gray-500 text-sm rounded-l">+91</span>
-                            <input type="tel" placeholder="Phone Number" name="phone" required
+                            <input type="tel" placeholder="Phone Number" name="phone" required pattern="^\d{10}$" inputmode="numeric" maxlength="10"
                                 class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-r focus:outline-none focus:border-brand-dark focus:ring-1 focus:ring-brand-dark transition">
                         </div>
                     </div>
@@ -993,7 +1019,7 @@
                     <div class="flex">
                         <span
                             class="inline-flex items-center px-3 border border-r-0 border-gray-200 bg-gray-100 text-gray-500 text-sm rounded-l">+91</span>
-                        <input type="tel" name="phone" placeholder="Phone Number" required
+                        <input type="tel" name="phone" placeholder="Phone Number" required pattern="^\d{10}$" inputmode="numeric" maxlength="10"
                             class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-r focus:outline-none focus:border-brand-primary focus:ring-1 focus:ring-brand-primary transition">
                     </div>
                 </div>
